@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FINAL</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
  </head>
  <body>
+   <!--- Navbar Section ---->
+
    <nav class="navbar">
       <div class="navbar__container">
-         <a href="/" id="navbar__logo">ANIMEGUIDE</a>
+         <a href="/" id="navbar__logo"><i class="fa fa-compass"></i>  TRAVEL</a>
          <div class="navbar__toggle" id="mobile-menu"> 
          <span class="bar"></span>
          <span class="bar"></span>
@@ -17,23 +23,37 @@
          </div> 
          <ul class="navbar__menu">
             <li class="navbar__item">
-               <a href="/" class="navbar__links">Home</a>
+               <a href="/" class="navbar__links"><i class="fas fa-house"></i> Home</a>
             </li>
             <li class="navbar__item">
-               <a href="/Genres.html" class="navbar__links">Genres</a>
+               <a href="/About.html" class="navbar__links"><i class="fas fa-layer-group"></i> About</a>
             </li>
             <li class="navbar__item">
-               <a href="/" class="navbar__links">Recommend</a>
-            </li>
-            <li class="navbar__item">
-               <a href="/" class="navbar__links">MyList</a>
+               <a href="/" class="navbar__links"><i class="fas fa-star"></i> Destinations</a>
             </li>
             <li class="navbar__btn">
-               <a href="/" class="button">Sign Up</a>
+               <a href="/" class="button">Booking</a>
             </li>
          </ul>
       </div>
    </nav>
+
+   <!----Hero Section-->
+   <div class="main">
+      <div class="main__container">
+       <div class="main__content">
+         <h1>YOUR JOURNEY</h1>
+         <h2>BEGINS HERE</h2>
+         <p>From mountain peaks to hidden trails - we take you cliser to nature</p>
+         <button class="main__btn"><a href="/">Get Started</a></button>
+       </div>
+       <div class="main__img--container">
+         <img src="/images/undraw_camping_q4ji.svg" alt="pic" id="main__img">
+       </div>
+      </div>
+   </div>
+
+   <script src="app.js"></script>
  </body>
  </html>
 
