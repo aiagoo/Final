@@ -348,7 +348,7 @@ padding-left: 25px;
 
 /* Services Section CSS */
 .services {
-    background: #fff;
+    background: #f1faee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,4 +373,108 @@ padding-left: 25px;
     flex-wrap: wrap;
 }
 
+
+.services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: url('images/pexels-felix-57767809-22027165.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.services__card:nth-child(2) {
+    background-image: url('images/pexels-felixmittermeier-1459534.jpg');
+}
+
+.services h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition:  0.2s ease-in;
+    cursor: pointer;
+}
+    
+@media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .services {
+        height: 1400px;
+    }
+
+    .services h1 {
+        font-size: 1.2rem;
+}
+
+.services__card {
+    width: 300px;
+}
+}
+
+
+/* Footer CSS */
+.footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    display: flex;
+}
 
