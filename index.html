@@ -62,7 +62,10 @@
       <h1>YOUR JOURNEY</h1>
       <h2>BEGINS HERE</h2>
       <p>From mountain peaks to hidden trails - we take you closer to nature</p>
-      <button class="main__btn"><a href="/">Get Started</a></button>
+      <button class="main__btn" onclick="startLoading(this)">
+         <span class="btn-text">Get Started</span>
+         <span class="loader" style="display: none;"></span>
+       </button>
     </div>
     <div class="main__img--container">
       <img src="images/undraw_camping_q4ji.svg" alt="pic" id="main__img">
