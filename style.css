@@ -613,3 +613,255 @@ padding-left: 25px;
     transform: scale(1.05);
     opacity: 0.9;
   }
+
+ 
+
+.navbar__links {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .navbar__links:active {
+    transform: translateY(2px);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Стили для кнопки Booking */
+  .button {
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #0b3d8d, #2563eb);
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #1c55d0, #103ebd);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    transform: translateY(2px);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @keyframes spinCompass {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #navbar__logo i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Анимация при наведении */
+  #navbar__logo:hover i {
+    animation: spinCompass 1.5s linear infinite;
+  }
+
+  .compass-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .compass-needle {
+    transform-origin: 50% 50%;
+    animation: spinNeedle 4s linear infinite;
+  }
+  
+  @keyframes spinNeedle {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Анимация появления текста */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Плавная анимация стрелки компаса */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .main__content h1,
+  .main__content h2,
+  .main__content p,
+  .main__btn {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .main__content h1 {
+    animation-delay: 0.3s;
+  }
+  .main__content h2 {
+    animation-delay: 0.6s;
+  }
+  .main__content p {
+    animation-delay: 0.9s;
+  }
+  .main__btn {
+    animation-delay: 1.2s;
+  }
+  
+  /* Анимация стрелки компаса */
+  .compass-needle {
+    transform-origin: 50% 50%;
+    animation: spin 8s linear infinite;
+  }
+  /*hhhh*/
+  /* Начальные стили навигационных ссылок */
+.navbar__links {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  /* Подчеркивание при наведении с анимацией */
+  .navbar__links::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar__links:hover::after {
+    width: 100%;
+  }
+  
+  .navbar__links:hover {
+    color: #ffd700; /* Например, золотой цвет при наведении */
+    transform: scale(1.05);
+  }
+  .navbar__item {
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeDown 0.5s forwards;
+  }
+  
+  .navbar__item:nth-child(1) { animation-delay: 0.3s; }
+  .navbar__item:nth-child(2) { animation-delay: 0.5s; }
+  .navbar__item:nth-child(3) { animation-delay: 0.7s; }
+  .navbar__btn { 
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeDown 0.5s forwards;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes fadeDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Добавим эффект прыжка и свечения */
+.navbar__links:hover {
+    color: #ffd700; /* Золотой */
+    transform: scale(1.1) translateY(-2px);
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  }
+  
+  /* Сглаживание перехода */
+  .navbar__links {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar__links.active {
+    animation: pulseGlow 2s infinite;
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      text-shadow: 0 0 5px #ffd700;
+    }
+    50% {
+      text-shadow: 0 0 20px #ffd700;
+    }
+    100% {
+      text-shadow: 0 0 5px #ffd700;
+    }
+  }
+
+  /*4444*/
+  
+ 
+    .loader-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ccc;
+      border-top-color: #333;
+      border-radius: 50%;
+      animation: spin 1s infinite linear;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+ 
+    .hidden {
+        display: none;
+    }
